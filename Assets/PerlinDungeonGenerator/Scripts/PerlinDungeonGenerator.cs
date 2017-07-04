@@ -169,7 +169,7 @@ public class PerlinDungeonGenerator : MonoBehaviour
 		mesh.uv = uvs.ToArray();
 		mesh.RecalculateNormals();
 		mesh.tangents = tangents.ToArray();
-		mesh.Optimize();
+		;
 		floorholder.GetComponent<MeshCollider>().sharedMesh = null;
 		floorholder.GetComponent<MeshCollider>().sharedMesh = mesh;
 		
@@ -179,7 +179,7 @@ public class PerlinDungeonGenerator : MonoBehaviour
 		mesh2.uv = uvs2.ToArray();
 		mesh2.RecalculateNormals();
 		mesh2.tangents = tangents.ToArray();
-		mesh2.Optimize();
+		;
 		roofholder.GetComponent<MeshCollider>().sharedMesh = null;
 		roofholder.GetComponent<MeshCollider>().sharedMesh = mesh2;
 		
@@ -188,7 +188,7 @@ public class PerlinDungeonGenerator : MonoBehaviour
 		mesh3.triangles = triangles3.ToArray();
 		mesh3.uv = uvs3.ToArray();
 		mesh3.RecalculateNormals();
-		mesh3.Optimize();
+		;
 		wallholder.GetComponent<MeshCollider>().sharedMesh = null;
 		wallholder.GetComponent<MeshCollider>().sharedMesh = mesh3;
 		
